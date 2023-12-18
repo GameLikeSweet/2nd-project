@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #header
+            {
+                display: inline;
+                height: 120px;
+                color: black;
+                background-color: aqua;
+            }
+            a
+            {
+                color: black;
+            }
+            a:hover
+            {
+                color:red;
+            }
+            #main_picture
+            {
+                height: 464px;
+            }
+            p.icon_title_text
+            {
+                text-align: center;
+            }
+            div.icon_box
+            {
+                width:1240px;
+                text-align: center;
+            }
+            div.icon_box div
+            {
+                margin-left:8%;
+                width:250px;
+            }
+            div.chefs
+            {
+                height: 304px;
+                width:814px;
+                margin-left:30%;
+                margin-top:20px;
+            }
+            div.chef:nth-child(1)
+            {
+                width:500px;
+            }
+            div.chef div
+            {
+                height:304px;
+            }
+            img
+            {
+                padding:0px,0px,0px,0px;
+                margin:0px,0px,0px,0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div><a href="#" target="_self">How to works</a></div><div><a href="#" target="_self">Gifts</a></div><div><a href="About.html" target="_self">About</a></div>
+            <img src="logo.png" margin_top="0px">
+            <div><a href="#" target="_self">Login</a></div><div><a href="#" target="_self">Members</a></div><div><a href="#" target="_self">Contacts</a></div>
+        </div>
+        <div id = "main_picture">
+            <img src="main.png" height="464px" margin-left="0px">
+        </div>
+        <p class="icon_title_text">"what's for dinner"<br>FINALLY HAS AN<br>EASY ANSWER</p>
+        <div class="icon_box">
+            <div><img src="icon1.png"><p>asdfasdfasdfasdfasdfasdfasdfasdf</p></div>
+            <div><img src="icon2.png"><p>asdfasdfasdfasdfasdfasdfasdfsadf</p></div>
+            <div><img src="icon3.png"><p>asdfasdfsadfsadfasdfsadfasdfasdf</p></div>
+            <div><img src="icon4.png"><p>sadfsadfasdfasdfasdfasdfasdfasdf</p></div>
+        </div>
+        <div class="chefs">
+            <div>asdfasdfasdfsadfsadfaasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfsdfasdf<br>asdfsasdfsadfsadfasdfasdfasdfasdfadfasdfasdf</div>
+            <div><img src="chef.png"></div>
+        </div>
+    </body>
+</html>
