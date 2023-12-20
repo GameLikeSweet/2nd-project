@@ -2,17 +2,25 @@
 <html>
     <head>
         <style>
-            *
+            *{text-align: center;}
+            body
             {
-                padding:0px;
-                margin:0px;
+                margin:0;
+                text-align: center;
             }
             #header
             {
-                display: inline;
+                margin:0 auto;
                 height: 120px;
                 color: black;
-                margin-left: 8%;
+            }
+            #header a
+            {
+                margin-left:20px;
+                margin-right:20px;
+                margin-top:27px;
+                display: inline-block;
+                
             }
             a
             {
@@ -26,76 +34,80 @@
             }
             #main_picture
             {
-                border:0px none none;
+                margin:0 auto;
                 height: 464px;
             }
             p.icon_title_text
             {
-                text-align: center;
-                font-size:200%;
+                font-size:large;
+            }
+            p.icon_title_text::first-line
+            {
+                font-size: small;
             }
             div.icon_box
             {
-                width:1240px;
-                margin-left:12%;
                 text-align: center;
-            }
-            hr
-            {
-                border-style:dotted
+                margin:0 auto;
+                width:1240px;
             }
             div.icon_box div
             {
-                margin-left:48px;
+                margin:auto 20px;
                 width:250px;
-                height: auto;
-                display:inline-block;
+                display: inline-block;
+            }
+            hr
+            {
+                margin:20px auto;
             }
             div.chefs
             {
                 height: 304px;
-                display: inline-block;
-                margin-top:40px;
+                text-align:center;
+                background-color: lightgray;
+            }
+            div.chefs div
+            {
+                width: 814px;
+                margin:10px auto;
             }
             div.chefs p
             {
                 width:500px;
                 height:100px;
                 display:inline-block;
-                overflow: hidden;
-                margin-left: 350px;
-                margin-bottom:160px;
-            }
-            div.chefs img
-            {
-                width:314px;
-                height:304px;
+                text-align: left;
+                overflow: auto;
+                margin-bottom:100px;
             }
         </style>
     </head>
     <body>
-        <div id="header"><a href="#" targe="_self">How To Works</a></div>
-        <div id="header"><a href="#" targe="_self">Gifts</a></div>
-        <div id="header"><a href="About.html" targe="_self">About</a></div>
         <div id="header">
-            <img src="logo.png" margin_top="0px">
+            <a href="#" target="_blank">How it works</a>
+            <a href="#" target="_blank">Gifts</a>
+            <a href="About.html" target="_blank">About</a>
+            <img src="logo.png" margin="0px">
+            <a href="#" target="_blank">login</a>
+            <a href="#" target="_blank">Member</a>
+            <a href="#" target="_blank">Contacts</a>
         </div>
-        <div id="header"><a href="#" targe="_self">Login</a></div>
-        <div id="header"><a href="#" targe="_self">Members</a></div>
-        <div id="header"><a href="#" targe="_self">Contacts</a></div>
-        <div id = "main_picture">
-            <img src="main.png" height="464px" margin-left="0px">
-        </div>
-        <p class="icon_title_text">"what's for dinner"<br>FINALLY HAS AN<br>EASY ANSWER</p>
+        <div id="main_picture"><img src="main.png"></div>
+        <p class="icon_title_text">"WHAT'S FOR DINNER"<br>
+            FINALLY HAS <br>ANEASY ANSWER
+        </p>
         <div class="icon_box">
-            <div><img src="icon1.png"><p>asdfasdfasdfasdfasdfasdfasdfasdf</p><hr></div>
-            <div><img src="icon2.png"><p>asdfasdfasdfasdfasdfasdfasdfsadf</p><hr></div>
-            <div><img src="icon3.png"><p>asdfasdfsadfsadfasdfsadfasdfasdf</p><hr></div>
-            <div><img src="icon4.png"><p>sadfsadfasdfasdfasdfasdfasdfasdf</p><hr></div>
+            <div><img src="icon1.png"><br>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<hr></div>
+            <div><img src="icon2.png"><br>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<hr></div>
+            <div><img src="icon3.png"><br>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<hr></div>
+            <div><img src="icon4.png"><br>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<hr></div>
         </div>
         <div class="chefs">
-            <p>asdfasdfsadfsadfaasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfsdfasdf<br>asdfsasdfsadfsadfasdfasdfasdfasdfadfasdfasdf</p>
-            <img src="chef.png">
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <img src="chef.png">
+            </div>
         </div>
     </body>
 </html>

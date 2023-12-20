@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <style>
-            *{margin : 0px; padding:0px;}
+            body
+            {
+                margin:0;
+            }
+            a
+            {
+                margin:5px;
+                text-align: center;
+                color: black;
+                text-decoration: none;
+                overflow: hidden;
+            }
+            a:hover
+            {
+                color:red;
+                text-decoration: underline;
+            }
+
             #top
             {
                 width:1000px;
                 height:500px;
+                margin:0 auto;
                 margin-top:30px;
-                margin-left: 20%;
-                background-color: gray;
+                font-size:0;
             }
             div.top_left
             {
                 width:750px;
                 height:500px;
                 display:inline-block;
+                background-image: url("chef_about.png");
             }
             div.top_right
             {
@@ -24,26 +43,22 @@
                 background-color: red;
                 display:inline-block;
             }
-            div.top_right div
-            {
-                width:250px;
-                height:250px;
-            }
             #top_box
             {
                 width:210px;
                 height:210px;
-                margin-left:0px;
-                margin-bottom:0px;
-                background-color: green;
-                
+                background-color: rgba(97, 178, 25, 0.5);
+                padding:20px 20px;
+                margin-top:250px;
+                overflow: hidden;
+                font-size: medium;
+
             }
 
             #box_all
             {
-                margin-left: 20%;
+                margin:0 auto;
                 width: 1000px;
-                height:500px;
                 font-size:0;
             }
             div.box_left
@@ -51,38 +66,41 @@
                 width:750px;
                 height: 500px;
                 background-color: aqua;
-                font-size: 0px;
-                display: inline-block;
-            }
-            div.box_left>div:nth-child(2n)
-            {
-                background-color: lightgray;
-            }
-            div.box_left>div:nth-child(2n+1)
-            {
-                background-color: orange;
+                display:inline-block;
             }
             div.box_right
             {
-                width:250px;
-                height:500px;
+                width:210px;
+                height:460px;
                 background-color: rgb(255, 255, 150);
+                display:inline-block;
                 font-size: medium;
-                display: inline-block;
+                padding:20px 20px;
                 overflow: hidden;
             }
             div.box
             {
-                width:250px;
-                height:250px;
+                width:210px;
+                height:210px;
                 font-size: medium;
-                display: inline-block;
-                overflow: hidden;
+                display:inline-block;
+                background-color: orange;
+                padding:20px 20px;
+                overflow: auto;
+            }
+            div.box:nth-child(2n)
+            {
+                background-color: lightgray;
+            }
+            h1, p
+            {
+                margin:0;
+                opacity: 1;
             }
 
             #footer
             {
-                margin-left: 20%;
+                margin:0 auto;
                 width:1000px;
                 background-color: lightpink;
             }
@@ -91,28 +109,39 @@
                 width:750px;
                 height:40px;
                 background-color: gray;
+                color:orange
             }
         </style>
     </head>
     <body>
-        <div id="top"><div class="top_left"><img src="chef_about.png"></div><div class="top_right"><div><img src="right1.png"></div><div><img src="right2.png"></div></div></div>
-
+        <div id="top">
+            <div class="top_left">
+                <div id="top_box"><h1>Title</h1><p>asdfasdfasdfasdf</p></div>
+            </div>
+            <div class="top_right">
+                <img src="right1.png">
+                <img src="right2.png">
+            </div>
+        </div>
         <div id="box_all">
             <div class="box_left">
-                <div class="box"><h1>title</h1>1</div>
-                <div class="box">2</div>
-                <div class="box">3</div>
-                <div class="box">4</div>
-                <div class="box">5</div>
-                <div class="box">6</div>
+                <div class="box"><h1>Title</h1><p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div>
+                <div class="box"><h1>Title</h1><p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></div>
+                <div class="box"><p>3</p></div>
+                <div class="box"><p>4</p></div>
+                <div class="box"><p>5</p></div>
+                <div class="box"><p>6</p></div>
             </div>
-            <div class="box_right">
-                7
-            </div>
+            <div class="box_right"><p>7</p></div>
         </div>
         <div id="footer">
             <div class="f_left">
-                <span>법적고지</span> | <span>이메일무단수집거부</span> | <span>이용약관</span> | <span>고객센터</span> | <span>입찰공고</span>
+                <a href="#" target="_blank">법적고지</a>|
+                <a href="#" target="_blank">이메일무단수집거부</a>|
+                <a href="#" target="_blank">이용약관</a>|
+                <a href="#" target="_blank">개인정보취급방침</a>|
+                <a href="#" target="_blank">고객센터</a>|
+                <a href="#" target="_blank">입찰공고</a>
             </div>
         </div>
     </body>
